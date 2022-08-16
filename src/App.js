@@ -18,7 +18,6 @@ const App = () => {
     txt = txt.replace(',', ' ');
     txt = txt.replace(/(?:\\[rn]|[\r\n]+)+/gm, ' ');;
 
-    console.log(txt);
 		const words = txt.split(" ");
 
 		const intervalId = setInterval(() => {
