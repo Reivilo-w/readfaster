@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+    @apply flex flex-wrap;
+	#showForm {
+		@apply mx-auto;
+	}
+	button {
+		@apply bg-blue-600 text-white px-2 py-1.5 transition-all border-b-2 border-blue-900 shadow-xl;
+
+		&:hover {
+			@apply border-b-4;
+		}
+	}
+
+	form {
+		@apply flex flex-wrap justify-center p-2 transition-all h-auto w-full;
+		.form-group {
+			@apply w-full mb-2;
+			label {
+				@apply w-full max-h-8;
+			}
+			input,
+			textarea {
+				@apply border-b-2 border-blue-800 shadow-xl;
+			}
+			input {
+				@apply max-h-8 ml-2;
+			}
+			textarea {
+				@apply w-full;
+			}
+		}
+
+		&.hided {
+			@apply h-0 opacity-0;
+		}
+	}
+
+    #readme {
+        @apply w-full py-5 text-center text-6xl;
+    }
+}
+
